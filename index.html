@@ -11,23 +11,28 @@
 </head>
 <body>
     <main>
+        <div id="navbar" class="navbar-container">
+            <ul class="nav-btn-list">
+                <li id="navlink1"><a href="#top-of-page" class="navlink">Home</a></li>
+                <li id="navlink2"><a href="#technical-skills-page" class="navlink">Technical Skills</a></Technical></li>
+                <li id="navlink3"><a href="#projects-page" class="navlink">Projects</a></li>
+                <li id="navlink4"><a href="#activities-page" class="navlink">Activities/Interests</a></li>
+                <li id="navlink5"><a href="#" class="navlink">Contact me</a></li>
+            </ul>
+        </div>
+        <a id ="top-btn" href="#top-of-page" title="Top of page" class="top-of-page-btn">
+            <i class="fas fa-angle-up"></i>
+        </a>
+        <!-- Top/Front Page -->
         <section id="top-of-page" class="landing">
-            <nav>
-                <ul class="nav-btn-list">
-                    <li><a href="#technical-skills-page" class="navlink">Technical Skills</a></Technical></li>
-                    <li><a href="#" class="navlink">Projects</a></li>
-                    <li><a href="#" class="navlink">Hobbies/Interests</a></li>
-                    <li><a href="#" class="navlink">Contact me</a></li>
-                </ul>
-            </nav>
             <div class = "buttons-container">
-                <button class="linkedin-btn">
+                <a target="_blank" href="https://www.linkedin.com/in/johnson-tong-11311917a/"class="mybtn linkedin-btn">
                     <i class="fab fa-linkedin"></i>
-                </button>
-                <button id="resume-btn"class="resume-btn">
+                </a>
+                <button id="resume-btn" class="mybtn resume-btn">
                     <i class="fas fa-file"></i>
                 </button>
-                <button class="music-btn">
+                <button class="mybtn music-btn">
                     <i class="fas fa-music"></i>
                 </button>
             </div>
@@ -39,100 +44,237 @@
             </div>
             <embed id="resume" class="resume" src="/pdf/Johnson_Tong_Resume.pdf"/>
         </section>
-    </main>
-    <!-- <div class="mqod-container">
-        <p>Motivational QOD: <br/></p>
-        <p class="actual-quote"></p>
-    </div> -->
-    <section id="technical-skills-page" class="technical-skills-page">
-        <div class="tech-skills-container">
-            <h3>Technical Skills: What have I worked with?</h3><hr/>
-            <p>I don't believe I can grade myself on proficiency, so I'll grade myself on <i>comfortability.</i></p>
-            <p>You can also check out some examples of my code through my projects and github!</p>
-            <h4>Languages</h4>
-            <ul class="languages">
-                <li class="languages-ele">
-                    <div class="score-row">
-                        C++
-                        <span class="score">
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                        </span>
-                    </div>
-                </li>
-                <li class="languages-ele">
-                    <div class="score-row">
-                        HTML and CSS
-                        <span class="score">
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </span>
-                    </div>
-                </li>
-                <li class="languages-ele">
-                    <div class="score-row">
-                        JavaScript
-                        <span class="score">
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </span>
-                    </div>
-                </li>
-                <li class="languages-ele">
-                    <div class="score-row">
-                        Python
-                        <span class="score">
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </span>
-                    </div>
-                </li>
-                <li class="languages-ele">
-                    <div class="score-row">
-                        Java
-                        <span class="score">
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot filled"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </span>
-                    </div>
-                </li>
-            </ul>
-            <div class="technologies">
-                <h4>Technologies</h4>
-                <p>I don't consider myself a complete expert on all these things, but I know my way around them.</p>
-                <ul class="tech-list">
-                    <li><p>React</p><p>Node.js</p><p>MATLAB</p><p>Mongoose/MongoDB</p></li>
-                    <li><p>Git and Github</p><p>AutoCAD</p><p>SolidWorks</p></li>
+        <!-- Technical Skills Page -->
+        <section id="technical-skills-page" class="technical-skills-page">
+            <div class="tech-skills-container">
+                <h3 class="headers">Technical Skills:<br/> What have I worked with?</h3>
+                <p>I don't believe I can grade myself on proficiency, so I'll grade myself on <i>comfortability.</i></p>
+                <p>You can also check out some examples of my code through my projects and github!</p>
+                <h4>Languages</h4>
+                <ul class="languages">
+                    <li class="languages-ele">
+                        <div class="score-row">
+                            C++
+                            <span class="score">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="languages-ele">
+                        <div class="score-row">
+                            HTML and CSS
+                            <span class="score">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="languages-ele">
+                        <div class="score-row">
+                            JavaScript
+                            <span class="score">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="languages-ele">
+                        <div class="score-row">
+                            Python
+                            <span class="score">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="languages-ele">
+                        <div class="score-row">
+                            Java
+                            <span class="score">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </span>
+                        </div>
+                    </li>
                 </ul>
+                <div class="technologies">
+                    <h4>Technologies</h4>
+                    <p>I don't consider myself a complete expert on all these things, but I know my way around them.</p>
+                    <ul class="tech-list">
+                        <li><p>React</p><p>Node.js</p><p>MATLAB</p><p>Mongoose/MongoDB</p></li>
+                        <li><p>Git and Github</p><p>AutoCAD</p><p>SolidWorks</p></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <a href="#top-of-page" class="top-of-page-btn">
-            <i class="fas fa-angle-double-up"></i>
-        </a>
-    </section>
-    <section>
-
-    </section>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects-page" class="projects-page">
+            <h3 class="headers projects">Projects</h3><br/>
+            <p id="about-projects">Here, I'll try my best to recall how I created my projects, as well as some of the major difficulties and challenges that I had along the way.</p>
+            <div class="sorting-project">
+                <h3 class="project-titles"><em> Sorting Visualizer </em></h3>
+                <div class="project-row sorting">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qN1SbD2A25Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <ul class="description sort">
+                        <li>My first major attempt at using React</li>
+                        <li>Learned how to animate things and use CSS with HTML, I really enjoyed making the UI for this</li>
+                        <li>Learned about and implemented the major sorting algorithms such as merge sort.</li>
+                        <li>Explained the algorithms in detail, providing pseudocode and time complexitiies.</li>
+                        <li>Took advantage of some libraries like react-modal</li>
+                        <li>Check it out <a class="links" target="_blank" href="https://longtongj28.github.io/sorting-visualizer/">here</a>!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grades-project">
+                <h3 class="project-titles"><em> Grades? Web App</em></h3>
+                <div class="project-row grades">
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/xoK2B_fRclM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <ul class="description grades">
+                        <li>Full stack application implemented using the MongooDB, Express, React, and Node.js tech stack.</li>
+                        <li>Designed and managed front-end application state through several components (React)</li>
+                        <li>Designed and implemented the REST API with the CRUD operations that allowed communication with MongoDB, my database provider (Node.js, Express, and Postman)</li>
+                        <li>
+                            The structural model for the data was this:<br/>User->Courses->Course Categories->Category Assignments<br/>
+                        </li>
+                        <li>
+                            I had several challenges with the data that were fixed by carrying the item key/ID from higher levels of data to lower levels, which helped me implement delete and put requests. 
+                        </li>
+                        <li>
+                            I needed a provider to deploy my website, since it's not a typical static website. I chose Heroku for that, and learned how to integrate the necessary heroku scripts into my own applications build script.
+                        </li>
+                        <li>
+                            Reflections: <br/>I would use React Redux for global application state rather than managing and passing through components.<br/>
+                            It also would have been a better idea to design the entire structural model for the data before implementing it.
+                        </li>
+                        <li>
+                            Check it out <a target="_blank" class="links" href="https://grades-calculator-jt28.herokuapp.com/">here</a>! 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="battleship-project">
+                <h3 class="project-titles"><em> MATLAB Battleship Game</em></h3>
+                <div class="project-row battleship">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i0ZSfx5bW2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <ul class="description battleship">
+                    <li> Meet MATLAB Battleship, a terminal game that was deceptively difficult to make.</li>
+                    <li> User input verification was the biggest challenge. My group members helped me by testing the game continuously and reporting errors to me.</li>
+                    <li> Non-valid inputs were taken into consideration in designing the game.</li>
+                    <li> For example, placing ships on top of each other or outside the board prompts the user again.</li>
+                    <li> The next most challenging part was the single player AI. There are two difficulties here, easy and hard.</li>
+                    <li>The easy difficulty simply guesses random areas on the board. I had a lot of fun figuring out what the hard difficulty meant. <br/>
+                            Eventually, I made a simple algorithm for the computer to keep guessing until it hits a ship. If it does, then search around that hit. </li>
+                    <li> Download MATLAB's IDE and play Battleship after downloading it from <a class="links" target="_blank" href="https://github.com/longtongj28/matlab-battleship">here</a>!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stapler-project">
+                <h3 class="project-titles"><em> Stapler Assembly and other ME projects</em></h3>
+                <div class="project-row stapler">
+                    <embed class="stapler-pdf"src="/pdf/Stapler Assembly.pdf">
+                    <ul class="description stapler">
+                    <li> My favorite project from my first year in Mechanical Engineering. </li>
+                    <li> Unfortunately, I don't remember too many specific details such as terminology, but I'll try my best to describe what's going on.</li>
+                    <li> The table in the top right is a list of components that had to be individually made in their own files.</li>
+                    <li> I had some fun inscribing the class name into the side of the stapler.</li>
+                    <li> Really learned a lot about how a stapler works from taking it apart.</li>
+                    <li> The five views that you can see are the standard views for professional engineering drawings.</li>
+                    <li> Made in SolidWorks</li>
+                    <li> Check out my other work <a class="links" target="_blank" href="https://www.dropbox.com/sh/5cvt2hw9t6lzc0j/AADrDaDVNy7DeJucVB24jbkZ">here</a>! You'll find both AutoCAD and SolidWorks projects there.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="activities-page" class="activities-page">
+            <h3 class="headers">Activities and Interests</h3>
+            <div class="activity-container si">
+                <h3 class="about si"><em>Supplemental Instruction Leader - CSUF | August 2019 - Present</em></h3>
+                <ul>
+                    <li>Prepared and facilitated peer to peer discussions to hone understanding for Calculus II and Intro to Programming.</li>
+                    <li>I mostly make use of Miro, a whiteboard website to prepare my activities. Click the link below to check some out.</li>
+                    <li>What I like the most about SI is picking apart students' questions and directing them towards their desired answers</li>
+                    <li>Due to the nature of Calculus II being very computationally oriented, it was hard to find opportunities to have fun activities. My participants still enjoyed solving problems together in a structured format.</li>
+                    <li>In Intro to Programming, a course in C++, I took advantage of resources like repl.it for coding problems and Kahoot for fun topic reviews.</li>
+                </ul>
+                <a target="_blank" class="img-link miro"href="https://miro.com/welcome/j1XaKzkbUyXnSFfpRfdQJbFWsToMnGN94FE8UtGQk08A55x9pHWOYI0owGLbkeUT"><img id="mlogo"src="/img/miro-logo.png" alt="miro logo"/></a>
+            </div>
+            <div class="activity-container acm">
+                <h3 class="about acm">ACM Workshop Manager - CSUF | Aug 2020 - Present</h3>
+                <ul>
+                    <li>Plan and host workshops based on different technologies for students with a team of two other students</li>
+                    <li>Click the link below to visit the ACM website for CSUF.</li>
+                </ul>
+                <a class="img-link acm"><img id="acm-logo"src="/img/acm-logo.png" alt="acm logo"></a>
+            </div>
+            <div class="activity-container me">
+                <h3 class="about me">About me:<br/>Non-programming interests???</h3>
+                <p>Believe it or not, I love playing basketball! I love watching it as well, but not as much as playing. My favorite players right now are Kevin Durant, James Harden, and Anthony Edwards. I'm not really into any other sports, as I don't find them as fun as basketball.</p>
+                <div class="image-case">
+                    <figure>
+                        <img src="/img/ant1.jpg" alt="Anthony Edwards" style="width:300px">
+                        <figcaption class="captions">Anthony Edwards</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/kd.jpg" alt="Kevin Durant" style="width:300px">
+                        <figcaption class="captions">Kevin Durant</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/jharden.jpg" alt="James Harden" style="width:300px">
+                        <figcaption class="captions">James Harden</figcaption>
+                    </figure>
+                </div>
+                <p>I also enjoy haircutting on the side. I cut my Dad and my two brother's hair at home, and that became a pretty common occurrence during quarantine 😀. <br/>I like to think I am getting pretty decent, as my clients are pretty satisfied. Unfortunately, I can't cut my own hair, but I hope I can do that one day. </p>
+                    <img src="/img/haircut.jpg" alt="haircut tools" style="width:300px">
+                <p>Another thing I like to do is help my parents cook, because I know I inevitably will be living on my own. By far my favorite thing to cook is dumplings and potstickers, although I enjoy dumplings more (hint: they are boiled).</p>
+                <div class="image-case">
+                    <img src="/img/dumplings.jpg" alt="dumplings yum" style="width:300px">
+                    <img src="/img/dumplings2.jpg" alt="more dumplings" style="width:500px">
+                </div>
+                <p>And of course, who doesn't like to play video games. I used to play StarCraft 2 (Protoss), where I actually got into the top 200 Grandmaster ranking for. I loved this RTS game, but since college, I've stopped playing it. I currently play League of Legends, although I am on the verge of quitting that as well (I am not Grandmaster in that game, only Silver 😂).</p>
+                <div class="image-case">
+                    <figure>
+                        <img src="/img/grandmaster.jpg" alt="Grandmaster" style="width:300px">
+                        <figcaption class="captions">Getting Grandmasters</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/stalker.jpg" alt="Stalker" style="width:300px">
+                        <figcaption class="captions">My favorite Protoss Unit: the Stalker</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/league.png" alt="irelia and talon" style="width:300px">
+                        <figcaption class="captions">My favorite LoL champions: Irelia and Talon</figcaption>
+                    </figure>
+                </div>
+                <p>I'm of Chinese descent, and I've made it my goal to fluently learn Mandarin and maybe even my parents' Chinese dialects. Because of this, I'm also interested in learning other languages used in my community.</p>
+                <p>我的中文有点s**t 哈哈，我尽量去进步💪</p>
+                <p>I like listening to R&B music, or anything that's chill and relaxing really. I've recently been getting myself to listen to more Chinese music of the same musical category to work towards my language goal, which I've been enjoying so far. My nine year old brother has been learning guitar recently, and I'm learning along with him, although I am very focused on programming right now 🖥️. </p>
+            </div>
+        </section>
+    </main>
+    <!-- This is the black pane that is in effect when the page loads -->
     <div class="loading">
         <div class = "welcome-container">
-            <p class="welcome">Welcome! Enjoy the website.</p>
+            <p class="welcome">Welcome!<br/>Learn a bit about me and enjoy the website.<br/>
+            - Johnson</p>
         <div>
     </div>
+    <!-- ............................... -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
     integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
     crossorigin="anonymous">
