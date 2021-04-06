@@ -17,9 +17,6 @@ t1.to('.welcome', {opacity:1, duration: 2.5})
 .fromTo('.fab.fa-linkedin.top', 1.25, {x:'250%'}, {x:'0%', ease:Power2.ease}, "-=1.2")
 .to('body',{overflowY: 'scroll', duration: 0})
 
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
 // resume animation (slide from right)
 const resume_btn = document.getElementById("resume-btn");
 const resume = document.getElementById("resume");

@@ -15,6 +15,11 @@
 body{
     overflow: hidden;
 }
+main {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+}
 /* Front page */
 .landing{
     min-height: 100vh;
@@ -208,6 +213,9 @@ body{
 .technical-skills-page {
     padding: 1rem;
     color: white;
+    background: url(img/bimg4.gif);
+    background-position: center;
+    background-size: cover;
     position: relative;
     min-height: 100vh;
     min-width: 100vw;
@@ -218,8 +226,8 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -30;
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 0;
 }
 .tech-skills-container {
@@ -525,19 +533,13 @@ body{
 
 /* Contact Page */
 .contact-page {
+    background:url(img/bimg6.gif);
+    background-size: cover;
     padding: 6rem;
     color: white;
     min-width: 100vw;
     min-height: 100vh;
     position: relative;
-}
-.back-vid-contact {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-height: 50vh;
-    min-width: 100vw;
-    z-index: -20;
 }
 
 .mypic-container {
