@@ -413,9 +413,9 @@ body{
 .activities-page {
     margin: none;
     padding: 1.5rem;
-    background: url(/img/bimg8.gif),
-                url(/img/bimg3.gif),
-                url(/img/bimg5.gif),
+    background: url(img/bimg8.gif),
+                url(img/bimg3.gif),
+                url(img/bimg5.gif),
                 linear-gradient(90deg, rgb(92, 92, 92) 0%, rgb(100, 24, 24) 0%, rgb(41, 48, 145) 100%);
     background-repeat: no-repeat, no-repeat, no-repeat, repeat;
     background-position: 0% 10%, 0% 97%, 100% 65% , left top;
@@ -526,9 +526,6 @@ body{
 /* Contact Page */
 .contact-page {
     padding: 6rem;
-    /* background: url(/img/bimg6.gif);
-    background-repeat: no-repeat;
-    background-size: cover; */
     color: white;
     min-width: 100vw;
     min-height: 100vh;
@@ -544,7 +541,7 @@ body{
 }
 
 .mypic-container {
-    background: url(/img/mypic.jpg);
+    background: url(img/mypic.jpg);
     background-position: 50% 50%;
     overflow:hidden;
     margin:20px;
