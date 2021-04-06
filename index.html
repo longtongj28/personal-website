@@ -8,50 +8,58 @@
     <title>Johnson Tong</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fca916582b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
     <main>
         <div id="navbar" class="navbar-container">
             <ul class="nav-btn-list">
                 <li id="navlink1"><a href="#top-of-page" class="navlink">Home</a></li>
-                <li id="navlink2"><a href="#technical-skills-page" class="navlink">Technical Skills</a></Technical></li>
+                <li id="navlink2"><a href="#technical-skills-page" class="navlink">Technical Skills</a></Technical>
+                </li>
                 <li id="navlink3"><a href="#projects-page" class="navlink">Projects</a></li>
                 <li id="navlink4"><a href="#activities-page" class="navlink">Activities/Interests</a></li>
-                <li id="navlink5"><a href="#" class="navlink">Contact me</a></li>
+                <li id="navlink5"><a href="#contact-page" class="navlink">Contact me</a></li>
             </ul>
         </div>
-        <a id ="top-btn" href="#top-of-page" title="Top of page" class="top-of-page-btn">
+        <a id="top-btn" href="#top-of-page" title="Top of page" class="top-of-page-btn">
             <i class="fas fa-angle-up"></i>
         </a>
         <!-- Top/Front Page -->
         <section id="top-of-page" class="landing">
-            <div class = "buttons-container">
-                <a target="_blank" href="https://www.linkedin.com/in/johnson-tong-11311917a/"class="mybtn linkedin-btn">
-                    <i class="fab fa-linkedin"></i>
+            <video autoplay muted loop class="back-vid front" src="/background_videos/bvid1.mp4"></video>
+            <div class="buttons-container">
+                <a target="_blank" href="https://www.linkedin.com/in/johnson-tong-11311917a/"
+                    class="mybtn linkedin-btn">
+                    <i class="fab fa-linkedin top"></i>
                 </a>
-                <button id="resume-btn" class="mybtn resume-btn">
+                <button title="Resume" id="resume-btn" class="mybtn resume-btn">
                     <i class="fas fa-file"></i>
-                </button>
-                <button class="mybtn music-btn">
-                    <i class="fas fa-music"></i>
                 </button>
             </div>
             <div class="intro">
                 <h1 id="intro1">Hi! I'm Johnson Tong,</h1>
-                <br/>
-                <p id="intro2">&nbsp;&nbsp;&nbsp;&nbsp;<em>currently a computer science student at CSUF<br/><br/></em></p>
-                <p id="intro3">&nbsp;&nbsp;&nbsp;&nbsp;<em>for a quick overview, click on my resume to the <strong>right</strong> or use the shortcuts <strong>above</strong></em></p>
+                <br />
+                <p id="intro2">&nbsp;&nbsp;&nbsp;&nbsp;<em>currently a computer science student at CSUF<br /><br /></em>
+                </p>
+                <p id="intro3">&nbsp;&nbsp;&nbsp;&nbsp;<em>for a quick overview, click on my resume to the
+                        <strong>right</strong> or use the shortcuts <strong>above</strong></em></p>
             </div>
-            <embed id="resume" class="resume" src="/pdf/Johnson_Tong_Resume.pdf"/>
+            <embed id="resume" class="resume" src="/pdf/Johnson_Tong_Resume.pdf" />
         </section>
         <!-- Technical Skills Page -->
         <section id="technical-skills-page" class="technical-skills-page">
-            <div class="tech-skills-container">
-                <h3 class="headers">Technical Skills:<br/> What have I worked with?</h3>
-                <p>I don't believe I can grade myself on proficiency, so I'll grade myself on <i>comfortability.</i></p>
-                <p>You can also check out some examples of my code through my projects and github!</p>
-                <h4>Languages</h4>
-                <ul class="languages">
+            <video autoplay muted loop class="back-vid-tech" src="/background_videos/back2.mp4"></video>
+            <div data-aos="slide-right" class="tech-skills-container">
+                <h3 data-aos="fade-top" data-aos-delay="400" data-aos-duration="400" class="headers">
+                    Technical Skills:<br /> What have I worked with?</h3>
+                <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="400">I don't believe I can grade myself
+                    on proficiency, so I'll grade myself on <i>comfortability.</i></p>
+                <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="400">You can also check out some
+                    examples of my code through my projects and github!</p>
+                <h4 data-aos="fade-left" data-aos-delay="400" data-aos-duration="400">Languages</h4>
+                <ul data-aos="fade-left" data-aos-delay="400" data-aos-duration="400" class="languages">
                     <li class="languages-ele">
                         <div class="score-row">
                             C++
@@ -113,182 +121,307 @@
                         </div>
                     </li>
                 </ul>
-                <div class="technologies">
+                <div data-aos="fade-right" data-aos-delay="400" data-aos-duration="400" class="technologies">
                     <h4>Technologies</h4>
                     <p>I don't consider myself a complete expert on all these things, but I know my way around them.</p>
                     <ul class="tech-list">
-                        <li><p>React</p><p>Node.js</p><p>MATLAB</p><p>Mongoose/MongoDB</p></li>
-                        <li><p>Git and Github</p><p>AutoCAD</p><p>SolidWorks</p></li>
+                        <li>
+                            <p>React</p>
+                            <p>Node.js</p>
+                            <p>MATLAB</p>
+                            <p>Mongoose/MongoDB</p>
+                        </li>
+                        <li>
+                            <p>Git and Github</p>
+                            <p>AutoCAD</p>
+                            <p>SolidWorks</p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
         <!-- Projects Section -->
         <section id="projects-page" class="projects-page">
-            <h3 class="headers projects">Projects</h3><br/>
-            <p id="about-projects">Here, I'll try my best to recall how I created my projects, as well as some of the major difficulties and challenges that I had along the way.</p>
+            <video autoplay muted loop class="back-vid-projects" src="/background_videos/back3.mp4"></video>
+            <h3 data-aos="slide-right" data-aos-duration="400" class="headers projects">Projects</h3><br />
+            <p data-aos="slide-left" data-aos-delay="400" data-aos-duration="400" id="about-projects">Here, I'll try my
+                best to recall how I created my projects, as well as describe some
+                of the difficulties and challenges that I had along the way.</p>
             <div class="sorting-project">
-                <h3 class="project-titles"><em> Sorting Visualizer </em></h3>
-                <div class="project-row sorting">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qN1SbD2A25Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <ul class="description sort">
+                <h3 data-aos="fade-top" data-aos-delay="800" data-aos-duration="400" class="project-titles"><em> Sorting
+                        Visualizer </em></h3>
+                <div data-aos="fade-bottom" data-aos-delay="800" data-aos-duration="400" class="project-row sorting">
+                    <iframe data-aos="slide-right" data-aos-delay="800"
+                        width="560" height="315" src="https://www.youtube.com/embed/qN1SbD2A25Y"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <ul data-aos="slide-left" data-aos-delay="800" class="description sort">
                         <li>My first major attempt at using React</li>
-                        <li>Learned how to animate things and use CSS with HTML, I really enjoyed making the UI for this</li>
+                        <li>Learned how to animate things and use CSS with HTML, I really enjoyed making the UI for this
+                        </li>
                         <li>Learned about and implemented the major sorting algorithms such as merge sort.</li>
                         <li>Explained the algorithms in detail, providing pseudocode and time complexitiies.</li>
                         <li>Took advantage of some libraries like react-modal</li>
-                        <li>Check it out <a class="links" target="_blank" href="https://longtongj28.github.io/sorting-visualizer/">here</a>!</li>
+                        <li>Check it out <a class="links" target="_blank"
+                                href="https://longtongj28.github.io/sorting-visualizer/">here</a>!</li>
                     </ul>
                 </div>
             </div>
             <div class="grades-project">
-                <h3 class="project-titles"><em> Grades? Web App</em></h3>
-                <div class="project-row grades">
-                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/xoK2B_fRclM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <ul class="description grades">
-                        <li>Full stack application implemented using the MongooDB, Express, React, and Node.js tech stack.</li>
+                <h3 data-aos="fade-top" class="project-titles"><em> Grades? Web App</em></h3>
+                <div data-aos="fade-top" data-aos-delay="400"class="project-row grades">
+                    <iframe data-aos="slide-right" data-aos-delay="400" class="video" width="560" height="315" src="https://www.youtube.com/embed/xoK2B_fRclM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <ul data-aos="slide-left" data-aos-delay="400"class="description grades">
+                        <li>Full stack application implemented using the MongooDB, Express, React, and Node.js tech
+                            stack.</li>
                         <li>Designed and managed front-end application state through several components (React)</li>
-                        <li>Designed and implemented the REST API with the CRUD operations that allowed communication with MongoDB, my database provider (Node.js, Express, and Postman)</li>
+                        <li>Designed and implemented the REST API with the CRUD operations that allowed communication
+                            with MongoDB, my database provider (Node.js, Express, and Postman)</li>
                         <li>
-                            The structural model for the data was this:<br/>User->Courses->Course Categories->Category Assignments<br/>
+                            The structural model for the data was this:<br />User->Courses->Course Categories->Category
+                            Assignments<br />
                         </li>
                         <li>
-                            I had several challenges with the data that were fixed by carrying the item key/ID from higher levels of data to lower levels, which helped me implement delete and put requests. 
+                            I had several challenges with the data that were fixed by carrying the item key/ID from
+                            higher levels of data to lower levels, which helped me implement delete and put requests.
                         </li>
                         <li>
-                            I needed a provider to deploy my website, since it's not a typical static website. I chose Heroku for that, and learned how to integrate the necessary heroku scripts into my own applications build script.
+                            I needed a provider to deploy my website, since it's not a typical static website. I chose
+                            Heroku for that, and learned how to integrate the necessary heroku scripts into my own
+                            applications build script.
                         </li>
                         <li>
-                            Reflections: <br/>I would use React Redux for global application state rather than managing and passing through components.<br/>
-                            It also would have been a better idea to design the entire structural model for the data before implementing it.
+                            Reflections: <br />I would use React Redux for global application state rather than managing
+                            and passing through components.<br />
+                            It also would have been a better idea to design the entire structural model for the data
+                            before implementing it.
                         </li>
                         <li>
-                            Check it out <a target="_blank" class="links" href="https://grades-calculator-jt28.herokuapp.com/">here</a>! 
+                            Check it out <a target="_blank" class="links"
+                                href="https://grades-calculator-jt28.herokuapp.com/">here</a>!
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="battleship-project">
-                <h3 class="project-titles"><em> MATLAB Battleship Game</em></h3>
-                <div class="project-row battleship">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i0ZSfx5bW2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <ul class="description battleship">
-                    <li> Meet MATLAB Battleship, a terminal game that was deceptively difficult to make.</li>
-                    <li> User input verification was the biggest challenge. My group members helped me by testing the game continuously and reporting errors to me.</li>
-                    <li> Non-valid inputs were taken into consideration in designing the game.</li>
-                    <li> For example, placing ships on top of each other or outside the board prompts the user again.</li>
-                    <li> The next most challenging part was the single player AI. There are two difficulties here, easy and hard.</li>
-                    <li>The easy difficulty simply guesses random areas on the board. I had a lot of fun figuring out what the hard difficulty meant. <br/>
-                            Eventually, I made a simple algorithm for the computer to keep guessing until it hits a ship. If it does, then search around that hit. </li>
-                    <li> Download MATLAB's IDE and play Battleship after downloading it from <a class="links" target="_blank" href="https://github.com/longtongj28/matlab-battleship">here</a>!</li>
+                <h3 data-aos="fade-top" class="project-titles"><em> MATLAB Battleship Game</em></h3>
+                <div data-aos="fade-top" data-aos-delay="400" class="project-row battleship">
+                    <iframe data-aos="slide-right" data-aos-delay="400" width="560" height="315" src="https://www.youtube.com/embed/i0ZSfx5bW2E"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <ul data-aos="slide-left" data-aos-delay="400"class="description battleship">
+                        <li> Meet MATLAB Battleship, a terminal game that was deceptively difficult to make.</li>
+                        <li> User input verification was the biggest challenge. My group members helped me by testing
+                            the game continuously and reporting errors to me.</li>
+                        <li> Non-valid inputs were taken into consideration in designing the game.</li>
+                        <li> For example, placing ships on top of each other or outside the board prompts the user
+                            again.</li>
+                        <li> The next most challenging part was the single player AI. There are two difficulties here,
+                            easy and hard.</li>
+                        <li>The easy difficulty simply guesses random areas on the board. I had a lot of fun figuring
+                            out what the hard difficulty meant. <br />
+                            Eventually, I made a simple algorithm for the computer to keep guessing until it hits a
+                            ship. If it does, then search around that hit. </li>
+                        <li> Download MATLAB's IDE and play Battleship after downloading it from <a class="links"
+                                target="_blank" href="https://github.com/longtongj28/matlab-battleship">here</a>!</li>
                     </ul>
                 </div>
             </div>
             <div class="stapler-project">
-                <h3 class="project-titles"><em> Stapler Assembly and other ME projects</em></h3>
-                <div class="project-row stapler">
-                    <embed class="stapler-pdf"src="/pdf/Stapler Assembly.pdf">
-                    <ul class="description stapler">
-                    <li> My favorite project from my first year in Mechanical Engineering. </li>
-                    <li> Unfortunately, I don't remember too many specific details such as terminology, but I'll try my best to describe what's going on.</li>
-                    <li> The table in the top right is a list of components that had to be individually made in their own files.</li>
-                    <li> I had some fun inscribing the class name into the side of the stapler.</li>
-                    <li> Really learned a lot about how a stapler works from taking it apart.</li>
-                    <li> The five views that you can see are the standard views for professional engineering drawings.</li>
-                    <li> Made in SolidWorks</li>
-                    <li> Check out my other work <a class="links" target="_blank" href="https://www.dropbox.com/sh/5cvt2hw9t6lzc0j/AADrDaDVNy7DeJucVB24jbkZ">here</a>! You'll find both AutoCAD and SolidWorks projects there.</li>
+                <h3 data-aos="fade-top" class="project-titles"><em> Stapler Assembly and other ME projects</em></h3>
+                <div data-aos="fade-top" data-aos-delay="400"class="project-row stapler">
+                    <embed data-aos="slide-right" data-aos-delay="400"class="stapler-pdf" src="/pdf/Stapler Assembly.pdf">
+                    <ul data-aos="slide-left" data-aos-delay="400"class="description stapler">
+                        <li> My favorite project from my first year in Mechanical Engineering. </li>
+                        <li> Unfortunately, I don't remember too many specific details such as terminology, but I'll try
+                            my best to describe what's going on.</li>
+                        <li> The table in the top right is a list of components that had to be individually made in
+                            their own files.</li>
+                        <li> I had some fun inscribing the class name into the side of the stapler.</li>
+                        <li> Really learned a lot about how a stapler works from taking it apart.</li>
+                        <li> The five views that you can see are the standard views for professional engineering
+                            drawings.</li>
+                        <li> Made in SolidWorks</li>
+                        <li> Check out my other work <a class="links" target="_blank"
+                                href="https://www.dropbox.com/sh/5cvt2hw9t6lzc0j/AADrDaDVNy7DeJucVB24jbkZ">here</a>!
+                            You'll find both AutoCAD and SolidWorks projects there.</li>
                     </ul>
                 </div>
             </div>
         </section>
         <section id="activities-page" class="activities-page">
-            <h3 class="headers">Activities and Interests</h3>
-            <div class="activity-container si">
+            <h3 data-aos="slide-left" class="headers">Activities and Interests</h3>
+            <p data-aos="slide-right" data-aos-delay="400"style="font-size: 20px; text-align: center;">I'll start off with some school activities, then branch into
+                some non-programming interests.</p>
+            <div data-aos="slide-left" class="activity-container si">
                 <h3 class="about si"><em>Supplemental Instruction Leader - CSUF | August 2019 - Present</em></h3>
                 <ul>
-                    <li>Prepared and facilitated peer to peer discussions to hone understanding for Calculus II and Intro to Programming.</li>
-                    <li>I mostly make use of Miro, a whiteboard website to prepare my activities. Click the link below to check some out.</li>
-                    <li>What I like the most about SI is picking apart students' questions and directing them towards their desired answers</li>
-                    <li>Due to the nature of Calculus II being very computationally oriented, it was hard to find opportunities to have fun activities. My participants still enjoyed solving problems together in a structured format.</li>
-                    <li>In Intro to Programming, a course in C++, I took advantage of resources like repl.it for coding problems and Kahoot for fun topic reviews.</li>
+                    <li>Prepared and facilitated peer to peer discussions to hone understanding for Calculus II and
+                        Intro to Programming.</li>
+                    <li>I mostly make use of Miro, a whiteboard website to prepare my activities. Click the link below
+                        to check some out.</li>
+                    <li>What I like the most about SI is picking apart students' questions and directing them towards
+                        their desired answers</li>
+                    <li>Due to the nature of Calculus II being very computationally oriented, it was hard to find
+                        opportunities to have fun activities. My participants still enjoyed solving problems together in
+                        a structured format.</li>
+                    <li>In Intro to Programming, a course in C++, I took advantage of resources like repl.it for coding
+                        problems and Kahoot for fun topic reviews.</li>
                 </ul>
-                <a target="_blank" class="img-link miro"href="https://miro.com/welcome/j1XaKzkbUyXnSFfpRfdQJbFWsToMnGN94FE8UtGQk08A55x9pHWOYI0owGLbkeUT"><img id="mlogo"src="/img/miro-logo.png" alt="miro logo"/></a>
+                <a data-aos="fade-top" data-aos-delay="400" target="_blank" class="img-link miro"
+                    href="https://miro.com/welcome/j1XaKzkbUyXnSFfpRfdQJbFWsToMnGN94FE8UtGQk08A55x9pHWOYI0owGLbkeUT"><img
+                        id="mlogo" src="/img/miro-logo.png" alt="miro logo" /></a>
             </div>
-            <div class="activity-container acm">
+            <div data-aos="slide-left"class="activity-container acm">
                 <h3 class="about acm">ACM Workshop Manager - CSUF | Aug 2020 - Present</h3>
                 <ul>
-                    <li>Plan and host workshops based on different technologies for students with a team of two other students</li>
+                    <li>Plan and host workshops based on different technologies for students with a team of two other
+                        students</li>
                     <li>Click the link below to visit the ACM website for CSUF.</li>
                 </ul>
-                <a class="img-link acm"><img id="acm-logo"src="/img/acm-logo.png" alt="acm logo"></a>
+                <a data-aos="fade-top" data-aos-delay="400"class="img-link acm"><img id="acm-logo" src="/img/acm-logo.png" alt="acm logo"></a>
             </div>
-            <div class="activity-container me">
-                <h3 class="about me">About me:<br/>Non-programming interests???</h3>
-                <p>Believe it or not, I love playing basketball! I love watching it as well, but not as much as playing. My favorite players right now are Kevin Durant, James Harden, and Anthony Edwards. I'm not really into any other sports, as I don't find them as fun as basketball.</p>
+            <h3 data-aos="fade-top" class="about me">About me:<br />Interests and Hobbies</h3>
+            <div data-aos="slide-right"class="activity-container bball">
+                <h2 class="activity-subheading"><u>Basketball</u></h2>
+                <p>I love playing basketball! I love watching it as well, but not as much as playing. My favorite
+                    players right now are Kevin Durant, James Harden, and Anthony Edwards. I'm not really into any other
+                    sports, as I don't find them as fun as basketball.</p>
                 <div class="image-case">
-                    <figure>
-                        <img src="/img/ant1.jpg" alt="Anthony Edwards" style="width:300px">
+                    <figure data-aos="fade-bottom">
+                        <img src="/img/ant1.jpg" data-aox-delay="200"alt="Anthony Edwards" style="width:250px">
                         <figcaption class="captions">Anthony Edwards</figcaption>
                     </figure>
-                    <figure>
-                        <img src="/img/kd.jpg" alt="Kevin Durant" style="width:300px">
+                    <figure data-aos="fade-bottom" data-aox-delay="200">
+                        <img src="/img/kd.jpg" alt="Kevin Durant" style="width:250px">
                         <figcaption class="captions">Kevin Durant</figcaption>
                     </figure>
-                    <figure>
-                        <img src="/img/jharden.jpg" alt="James Harden" style="width:300px">
+                    <figure data-aos="fade-bottom" data-aox-delay="200">
+                        <img src="/img/jharden.jpg" alt="James Harden" style="width:250px">
                         <figcaption class="captions">James Harden</figcaption>
                     </figure>
                 </div>
-                <p>I also enjoy haircutting on the side. I cut my Dad and my two brother's hair at home, and that became a pretty common occurrence during quarantine 😀. <br/>I like to think I am getting pretty decent, as my clients are pretty satisfied. Unfortunately, I can't cut my own hair, but I hope I can do that one day. </p>
-                    <img src="/img/haircut.jpg" alt="haircut tools" style="width:300px">
-                <p>Another thing I like to do is help my parents cook, because I know I inevitably will be living on my own. By far my favorite thing to cook is dumplings and potstickers, although I enjoy dumplings more (hint: they are boiled).</p>
-                <div class="image-case">
-                    <img src="/img/dumplings.jpg" alt="dumplings yum" style="width:300px">
-                    <img src="/img/dumplings2.jpg" alt="more dumplings" style="width:500px">
+            </div>
+
+            <div data-aos="slide-left"data-aox-delay="200"class="activity-container haircut">
+                <h2 class="activity-subheading"><u>Haircutting?</u></h2>
+                <p>I also enjoy haircutting on the side. I cut my Dad and my two brother's hair at home, and that became
+                    a pretty common occurrence during quarantine 😀. <br />I like to think I am getting pretty decent,
+                    as my clients are pretty satisfied. Unfortunately, I can't cut my own hair, but I hope I can do that
+                    one day. </p>
+                <img data-aos="fade-bottom"data-aox-delay="200"src="/img/haircut.jpg" alt="haircut tools" style="width:250px;margin:1.5rem;">
+            </div>
+
+            <div data-aos="slide-right"data-aox-delay="200" class="activity-container dumpling">
+                <h2 class="activity-subheading"><u>Dumplings!🥟</u></h2>
+                <p>Another thing I like to do is help my parents cook, because I know I inevitably will be living on my
+                    own. By far my favorite thing to cook is dumplings and potstickers, although I enjoy dumplings more
+                    (hint: they are boiled).</p>
+                <div class="image-case dumpling">
+                    <img data-aos="fade-left"data-aox-delay="200"src="/img/dumplings.jpg" alt="dumplings yum" style="width:250px">
+                    <img data-aos="fade-left"data-aox-delay="200"src="/img/dumplings2.jpg" alt="more dumplings" style="width:400px">
                 </div>
-                <p>And of course, who doesn't like to play video games. I used to play StarCraft 2 (Protoss), where I actually got into the top 200 Grandmaster ranking for. I loved this RTS game, but since college, I've stopped playing it. I currently play League of Legends, although I am on the verge of quitting that as well (I am not Grandmaster in that game, only Silver 😂).</p>
+            </div>
+
+            <div data-aos="slide-left"data-aox-delay="200" class="activity-container games">
+                <h2 class="activity-subheading"><u>Video Games🎮</u></h2>
+                <p>And of course, who doesn't like to play video games. I used to play StarCraft 2 (Protoss), where I
+                    actually got into the top 200 Grandmaster ranking for. I loved this RTS game, but since college,
+                    I've stopped playing it. I currently play League of Legends, although I am on the verge of quitting
+                    that as well (I am not Grandmaster in that game, only Silver 😂).</p>
                 <div class="image-case">
-                    <figure>
-                        <img src="/img/grandmaster.jpg" alt="Grandmaster" style="width:300px">
+                    <figure data-aos="fade-left"data-aox-delay="200">
+                        <img src="/img/grandmaster.jpg" alt="Grandmaster" style="width:250px">
                         <figcaption class="captions">Getting Grandmasters</figcaption>
                     </figure>
-                    <figure>
-                        <img src="/img/stalker.jpg" alt="Stalker" style="width:300px">
+                    <figure data-aos="slide-left"data-aox-delay="200">
+                        <img src="/img/stalker.jpg" alt="Stalker" style="width:250px">
                         <figcaption class="captions">My favorite Protoss Unit: the Stalker</figcaption>
                     </figure>
-                    <figure>
+                    <figure data-aos="slide-left"data-aox-delay="200">
                         <img src="/img/league.png" alt="irelia and talon" style="width:300px">
                         <figcaption class="captions">My favorite LoL champions: Irelia and Talon</figcaption>
                     </figure>
                 </div>
-                <p>I'm of Chinese descent, and I've made it my goal to fluently learn Mandarin and maybe even my parents' Chinese dialects. Because of this, I'm also interested in learning other languages used in my community.</p>
-                <p>我的中文有点s**t 哈哈，我尽量去进步💪</p>
-                <p>I like listening to R&B music, or anything that's chill and relaxing really. I've recently been getting myself to listen to more Chinese music of the same musical category to work towards my language goal, which I've been enjoying so far. My nine year old brother has been learning guitar recently, and I'm learning along with him, although I am very focused on programming right now 🖥️. </p>
+            </div>
+
+            <div data-aos="slide-right"data-aox-delay="200" class="activity-container me">
+                <h2 class="activity-subheading"><u>Language</u></h2>
+                <p>I'm of Chinese descent, and I've made it my goal to fluently learn Mandarin. If I have the ability
+                    to, I also want to work on my parents' Chinese Dialects. Because of this, I'm also interested in
+                    learning other languages used in my community.</p>
+                <p>我的中文有点s**t 哈哈，我正在尽力进步💪</p>
+                <p>I like listening to R&B music, or anything that's chill and relaxing really. I've recently been
+                    getting myself to listen to more Chinese music of the same musical category to work towards my
+                    language goal, which I've been enjoying so far. </p>
+            </div>
+
+        </section>
+        <!-- contact me page -->
+        <section id="contact-page" class="contact-page">
+            <video autoplay muted loop class="back-vid-contact" src="/background_videos/back4.mp4"></video>
+            <h3 data-aos="slide-right"class="contact-header">Contact me</h3>
+            <div data-aos="slide-left"data-aox-delay="200" class="row-about-me">
+                <div class="mypic-container"></div>
+                <div class="hey-thanks-container">
+                    <p id="hey-thanks">Hey! Thanks for visiting my website! Here are some ways you can contact me.<br />
+                    </p>
+                    <ul class="link-list">
+                        <li>
+                            <p class="link-name">Github</p>
+                            <a target="_blank" href="https://github.com/longtongj28" class="contact-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <p class="link-name">Email</p>
+                            <button id="email-btn" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <p class="link-name">LinkedIn</p>
+                            <a target="_blank" href="https://www.linkedin.com/in/johnson-tong-11311917a/"
+                                class="contact-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="email-container" class="email-container">jt28@csu.fullerton.edu</div>
+                </div>
             </div>
         </section>
+        <footer>
+            <p>© 2021 Johnson Tong</p>
+        </footer>
     </main>
     <!-- This is the black pane that is in effect when the page loads -->
     <div class="loading">
-        <div class = "welcome-container">
-            <p class="welcome">Welcome!<br/>Learn a bit about me and enjoy the website.<br/>
-            - Johnson</p>
-        <div>
-    </div>
-    <!-- ............................... -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
-    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
-    crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
-    integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
-    crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
-    integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" 
-    crossorigin="anonymous">
-    </script>
+        <div class="welcome-container">
+            <p class="welcome">Welcome!<br />Learn a bit about me and enjoy the website.<br />
+                - Johnson</p>
+            <div>
+            </div>
+            <!-- ............................... -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+                integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+                crossorigin="anonymous">
+                </script>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+                integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+                crossorigin="anonymous">
+                </script>
 
-    <script src="app.js"></script>
+            <script src="app.js"></script>
 </body>
 
 </html>

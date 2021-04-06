@@ -13,9 +13,8 @@ t1.to('.welcome', {opacity:1, duration: 2.5})
 .fromTo('#intro3', 2.5, {x: '-150%'}, {x: '0%', ease:Power2.ease}, "-=1.5")
 .fromTo('#intro2', 2.5, {x: '-150%'}, {x: '0%', ease:Power2.ease}, "-=2.5")
 .fromTo('#intro1', 2, {x: '-150%'}, {x: '0%', ease:Power2.ease}, "-=2")
-.fromTo('.fas.fa-music', 1.25, {x:'300%'}, {x:'0%', ease:Power2.ease}, "-=1.3")
 .fromTo('.fas.fa-file', 1.25, {x:'300%'}, {x:'0%', ease:Power2.ease}, "-=1.0")
-.fromTo('.fab.fa-linkedin', 1.25, {x:'250%'}, {x:'0%', ease:Power2.ease}, "-=1.2")
+.fromTo('.fab.fa-linkedin.top', 1.25, {x:'250%'}, {x:'0%', ease:Power2.ease}, "-=1.2")
 .to('body',{overflowY: 'scroll', duration: 0})
 
 // resume animation (slide from right)
@@ -25,10 +24,12 @@ let resume_opened = false;
 resume_btn.addEventListener("click", () => {
     if(resume_opened === false) {
         resume.style.right = "6%";
+        resume.style.opacity = "100%";
         resume_btn.style.textShadow="0px 0px 6px red";
     }
     else {
         resume.style.right = "-100%";
+        resume.style.opacity = "0%";
         resume_btn.style.textShadow="none";
     }
     resume_opened = !resume_opened;
@@ -48,4 +49,23 @@ window.onscroll = () => {
         navbar.classList.remove("sticky");
         top_btn.classList.remove("toppage-sticky");
     }
+
+    if(window.scrollY === 0) {
+        top_btn.classList.remove("toppage-sticky");
+    }
 }
+// email container at the bottom of page
+let econtainer = document.getElementById("email-container");
+let ebtn = document.getElementById("email-btn");
+let email_opened = false;
+ebtn.addEventListener("click", ()=> {
+    if(!email_opened) {
+        econtainer.style.opacity = "100%";
+        ebtn.classList.add("contact-link-pressed");
+    }
+    else {
+        econtainer.style.opacity="0%";
+        ebtn.classList.remove("contact-link-pressed");;
+    }
+    email_opened=!email_opened;
+})
