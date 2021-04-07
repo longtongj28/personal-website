@@ -27,8 +27,6 @@ main {
     min-width: 100vw;
     color:white;
     position: relative;
-    background:url(img/bimg1.gif);
-    background-size: cover;
 }
 .back-vid {
     position: absolute;
