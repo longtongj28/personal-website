@@ -8,10 +8,19 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0; 
-    background: transparent; 
+    width: 10px; 
+    border-radius: 10px;
 } 
-
+::-webkit-scrollbar-track{
+    background:rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,0.4);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:rgba(0,0,0,0.6);
+}
 body{
     overflow-x:hidden;
     overflow: hidden;
