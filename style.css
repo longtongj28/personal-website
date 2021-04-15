@@ -8,13 +8,15 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px; 
+    width: 15px; 
     border-radius: 10px;
+    padding:5px;
 } 
 ::-webkit-scrollbar-track{
     background:rgba(0,0,0,0.3);
 }
 ::-webkit-scrollbar-thumb{
+    width: 9px;
     background: rgba(0,0,0,0.4);
     border-radius: 4px;
 }
