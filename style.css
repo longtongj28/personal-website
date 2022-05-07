@@ -425,6 +425,14 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     z-index: 10;
 }
+
+.project-row img {
+    width: 400px;
+}
+
+.project-row.open-src {
+    font-size: 20px;
+}
 .description {
     width: 500px;
 }
